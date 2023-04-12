@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e3e7eb;
+}
+h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 28px;
+}
+h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+}
+/* nav */
+nav {
+  padding: 0 85px;
+  background-color: #f4f3f3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+nav li {
+  padding: 0 27px;
+}
+#logo {
+  padding-left: 0;
+}
+.nav-left a {
+  color: #111727;
+}
+.nav-left a:hover {
+  color: #159895;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+.nav-right button {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  display: none;
+}
+/* .nav-right a:hover {
+  background-color: #159895;/
+} */
+.nav-right img {
+  width: 100%;
+}
+.list-menu {
+  background-color: #d3d3d3;
+  margin: 0;
+  text-align: center;
+  display: none;
+}
+.list-menu li {
+  padding: 20px 0;
+}
+.list-menu a {
+  color: #111727;
+}
+.button {
+  background-color: #111727;
+  color: #e2e2e3 !important;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+.button:hover {
+  background-color: #159895;
+}
+.card {
+  border-radius: 8px;
+  box-shadow: 0 0 10px #171717;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul a {
+  text-decoration: none;
+}
+.form {
+  width: 40%;
+  margin: 50px auto;
+  text-align: center;
+}
+form {
+  text-align: left;
+}
+form div {
+  margin-top: 10px;
+}
+label {
+  font-weight: bold;
+  font-size: 15px;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  background-color: #159895;
+  border: 1px solid #1a5f7a;
+  border-radius: 5px;
+  box-shadow: 2px 3px 3px #002b5b;
+}
+textarea {
+  resize: none;
+}
+.submit {
+  text-align: right;
+  margin-top: 45px;
+}
+.submit button {
+  background-color: #002b5b;
+  color: #e2e2e3;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  nav {
+    padding: 0 75px;
+  }
+  .navbar {
+    display: none;
+  }
+  .nav-right button {
+    display: block;
+  }
+}
+@media only screen and (max-width: 576px) {
+  nav {
+    padding: 0 42px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  nav {
+    padding: 0 12px;
+  }
+}

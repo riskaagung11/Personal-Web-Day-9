@@ -1,0 +1,132 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/share.css" />
+    <link rel="stylesheet" href="./assets/css/my-project.css" />
+  </head>
+  <body>
+    <!-- nav start -->
+    <nav>
+      <ul class="nav-left">
+        <li id="logo">
+          <img src="./assets/images/logo.png" alt="logo" />
+        </li>
+        <li class="navbar"><a href="./index.html">Home</a></li>
+        <li class="navbar"><a href="./my-project.html">My Project</a></li>
+        <li class="navbar"><a href="./testimonial.html">Testimonials</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="./contact.html" class="navbar button">Contact Me</a>
+        <button onclick="openListMenu()">
+          <img src="./assets/images/Bars3.svg" alt="hamburger" />
+        </button>
+      </div>
+    </nav>
+    <!-- nav end -->
+    <!-- list menu start-->
+    <ul class="list-menu" id="menu">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./my-project.html">My Project</a></li>
+      <li><a href="./testimonial.html">Testimonials</a></li>
+      <li><a href="./contact.html" class="button">Contact Me</a></li>
+    </ul>
+    <!-- list menu end -->
+    <main>
+      <section class="form">
+        <h1>ADD MY PROJECT</h1>
+        <form onsubmit="getBlog(event)">
+          <div>
+            <label for="project">Project Name</label>
+            <input type="text" id="project" />
+          </div>
+          <div class="flex-form">
+            <div class="date">
+              <label for="start-date">Start Date</label>
+              <input type="date" id="start-date" />
+            </div>
+            <div class="date">
+              <label for="end-date">End Date</label>
+              <input type="date" id="end-date" />
+            </div>
+          </div>
+          <div>
+            <label for="description">Description</label>
+            <textarea id="description"></textarea>
+          </div>
+          <div>
+            <label>Technologi</label>
+            <div class="checkbox">
+              <ul>
+                <li>
+                  <input type="checkbox" id="nodeJs" />
+                  <label for="node">Node JS</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="reactJs" />
+                  <label for="react">React JS</label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <input type="checkbox" id="nextJs" />
+                  <label for="next">Next JS</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="typescript" />
+                  <label for="typescript">TypeScript</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="upload">
+            <label>Upload Image</label>
+            <div id="input-blog-group">
+              <label for="input-blog">
+                <div>
+                  <p>choose</p>
+                </div>
+                <img src="./assets/images/PaperClip.svg" alt="papper clip" />
+                <input type="file" id="input-blog" hidden />
+              </label>
+            </div>
+          </div>
+          <div class="submit">
+            <button>Submit</button>
+          </div>
+        </form>
+      </section>
+      <section id="my-project">
+        <h2>MY PROJECT</h2>
+        <div id="dynamic-project">
+          <!-- card start -->
+          <article class="card">
+            <div class="card-item">
+              <img src="./assets/images/blog.png" alt="card image" />
+              <div class="card-title">
+                <a href="./project-detail.html"><h3>Dumbways Mobile App</h3></a>
+                <p>durasi: 3 bulan</p>
+              </div>
+              <div class="card-description">
+                <p>App that used for dumbways student, it was deployed and can downloaded on playstore. Happy download</p>
+                <ul>
+                  <li><img src="./assets/images/icons8-node-js.svg" alt="node js" /></li>
+                  <li><img src="./assets/images/icons8-react-native.svg" alt="react js" /></li>
+                  <li><img src="./assets/images/nextjs-icon-svgrepo-com.svg" alt="next js" /></li>
+                  <li><img src="./assets/images/icons8-typescript.svg" alt="typescript" /></li>
+                </ul>
+              </div>
+              <div class="card-button">
+                <button>edit</button>
+                <button>delete</button>
+              </div>
+            </div>
+          </article>
+          <!-- card end -->
+        </div>
+      </section>
+    </main>
+    <script src="./assets/js/project.js"></script>
+    <script src="./assets/js/navbar.js"></script>
+  </body>
+</html>

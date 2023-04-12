@@ -1,0 +1,127 @@
+#hero {
+  background-color: #ffffff;
+  width: 80%;
+  margin: 60px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #171717;
+}
+.content {
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* article left */
+#article-content {
+  width: 60%;
+}
+#article-content p {
+  text-align: justify;
+}
+.button-article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.button-article li {
+  padding-right: 15px;
+}
+.button-article a {
+  background-color: #171717;
+  color: white;
+  border-radius: 16px;
+  padding: 8px 19px;
+  display: inline-block;
+}
+.button-article a:hover {
+  background-color: #159895;
+}
+.button-article #download {
+  margin: 8px 0;
+}
+#download a {
+  background-color: transparent;
+  color: black;
+  padding: 0;
+}
+#download img {
+  width: 16px;
+}
+#link-social-media {
+  display: flex;
+  justify-content: flex-start;
+  margin: 32px 0;
+}
+#link-social-media li {
+  padding-right: 18px;
+}
+#link-social-media img {
+  width: 28px;
+}
+/* article right */
+.card {
+  width: 35%;
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+}
+.content-text {
+  text-align: center;
+  margin: 16px 0;
+}
+.content-text h2 {
+  margin: 13px 0;
+}
+.content-text p {
+  margin: 5px 0;
+}
+@media only screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  #article-content {
+    width: 85%;
+  }
+  .button-article {
+    margin-top: 55px;
+  }
+  #link-social-media {
+    justify-content: space-evenly;
+    width: 45%;
+    margin: 45px auto;
+  }
+  #link-social-media li {
+    padding: 0;
+  }
+  #link-social-media img {
+    width: 35px;
+  }
+  .card {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #article-content {
+    width: 95%;
+  }
+  #link-social-media {
+    width: 50%;
+  }
+  .card {
+    width: 65%;
+  }
+}
+@media only screen and (max-width: 390px) {
+  #hero {
+    width: 95%;
+  }
+  .content {
+    width: 95%;
+  }
+  #link-social-media {
+    width: 60%;
+  }
+}

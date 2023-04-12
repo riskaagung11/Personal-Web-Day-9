@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/share.css" />
+    <link rel="stylesheet" href="./assets/css/testimonial.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- nav start -->
+    <nav>
+      <ul class="nav-left">
+        <li id="logo">
+          <img src="./assets/images/logo.png" alt="logo" />
+        </li>
+        <li class="navbar"><a href="./index.html">Home</a></li>
+        <li class="navbar"><a href="./my-project.html">My Project</a></li>
+        <li class="navbar"><a href="./testimonial.html">Testimonials</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="./contact.html" class="navbar button">Contact Me</a>
+        <button onclick="openListMenu()">
+          <img src="./assets/images/Bars3.svg" alt="hamburger" />
+        </button>
+      </div>
+    </nav>
+    <!-- nav end -->
+    <!-- list menu start-->
+    <ul class="list-menu" id="menu">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./my-project.html">My Project</a></li>
+      <li><a href="./testimonial.html">Testimonials</a></li>
+      <li><a href="./contact.html" class="button">Contact Me</a></li>
+    </ul>
+    <!-- list menu end -->
+    <main>
+      <h1>My Testimonials</h1>
+      <div class="container-rating">
+        <h2>Rating By Star</h2>
+        <div class="rating">
+          <button class="rating-btn" onclick="showTestimonial()">All</button>
+          <button class="rating-btn" onclick="filterTestimonials(1)">1 <i class="fa-solid fa-star"></i></button>
+          <button class="rating-btn" onclick="filterTestimonials(2)">2 <i class="fa-solid fa-star"></i></button>
+          <button class="rating-btn" onclick="filterTestimonials(3)">3 <i class="fa-solid fa-star"></i></button>
+          <button class="rating-btn" onclick="filterTestimonials(4)">4 <i class="fa-solid fa-star"></i></button>
+          <button class="rating-btn" onclick="filterTestimonials(5)">5 <i class="fa-solid fa-star"></i></button>
+        </div>
+      </div>
+      <section id="my-testimonials">
+        <!-- cars start -->
+        <!-- <article class="card">
+          <img src="./assets/images/Capture.PNG" alt="profile-testimonial" />
+          <p><q>sesuai dengan yang saya mau</q></p>
+          <p class="author">- Surya Elidanto</p>
+        </article> -->
+        <!-- card end -->
+      </section>
+    </main>
+    <script src="./assets/js/navbar.js"></script>
+    <!-- <script src="./assets/js/testimonial_OPP.js"></script> -->
+    <!-- <script src="./assets/js/testimonial.js"></script> -->
+    <script src="./assets/js/ajax.js"></script>
+  </body>
+</html>
